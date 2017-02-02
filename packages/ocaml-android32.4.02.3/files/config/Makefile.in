@@ -21,7 +21,7 @@ X11_LINK=not found
 TK_DEFS=
 TK_LINK=
 LIBBFD_LINK=
-BYTECC=%{conf-android:toolpref}%gcc %{conf-android:cflags}% -O2
+BYTECC=%{conf-android:toolpref}%gcc %{conf-android:cflags}% -O3
 BYTECCCOMPOPTS=-fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
 BYTECCLINKOPTS= -Wl,-E
 BYTECCLIBS= -lm  -ldl
